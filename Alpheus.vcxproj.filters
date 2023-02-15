@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Tickbase.cpp" />
+    <ClCompile Include="voicerecording.cpp" />
+    <ClCompile Include="Alpheus\Menu\Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Aimbot\Aimbot.cpp">
+      <Filter>Features\Aimbot\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Legit\LegitAimbot.cpp">
+      <Filter>Features\Aimbot\Legit</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Aimbot\Autowall.cpp">
+      <Filter>Features\Autowall</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\AntiAim\AntiAim.cpp">
+      <Filter>Features\AntiAim\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\AntiAim\LegitAntiAim.cpp">
+      <Filter>Features\AntiAim\Legit</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Aimbot\LagComp.cpp">
+      <Filter>Features\LagComp</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\AntiAim\FakeLag.cpp">
+      <Filter>Features\Fakelag</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Aimbot\EnginePrediction.cpp">
+      <Filter>Features\Prediction</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Visuals\ESP.cpp">
+      <Filter>Features\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Knife\skinchanger.cpp">
+      <Filter>Features\Skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Resolver\Resolver2.cpp">
+      <Filter>Features\Resolver</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Visuals\RemasteredEsp.cpp">
+      <Filter>Features\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Visuals\GlowEsp.cpp">
+      <Filter>Features\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Knife\glovechanger.cpp">
+      <Filter>Features\Skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Utils\GlobalVars.cpp">
+      <Filter>Features\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Visuals\grenadetracer.cpp">
+      <Filter>Features\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Menu\SpecList.cpp">
+      <Filter>Features\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Visuals\Nightmode.cpp">
+      <Filter>Features\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Walkbot.cpp">
+      <Filter>Features\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Menu\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\DLLMain.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Hooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Misc\Logger.cpp">
+      <Filter>Features\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Logger\Logger_sec.cpp">
+      <Filter>Features\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Knife\Knife.cpp">
+      <Filter>Features\Skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\ProfileChanger\valve_parser.cpp">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\base_gcmessages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\cstrike15_gcmessages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\econ_gcmessages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\engine_gcmessages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\fatdemo.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\gcsdk_gcmessages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\gcsystemmsgs.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\netmessages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\network_connection.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\Protobuffs.cpp">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\steamdatagram_messages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\steammessages.pb.cc">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\ProfileChanger\ProtoUtils\Protobuffs.cpp">
+      <Filter>Features\ProfileChanger\ProtoUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\MinHook\buffer.c">
+      <Filter>Hooks\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\MinHook\hook.c">
+      <Filter>Hooks\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\MinHook\trampoline.c">
+      <Filter>Hooks\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\MinHook\hde\hde32.c">
+      <Filter>Hooks\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\MinHook\hde\hde64.c">
+      <Filter>Hooks\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\checksum_crc.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\CEntity.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\Checksum_Md5.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\SDK\Drops+.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Utils\Interfaces.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Menu\lodepng\lodepng.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Utils\Math.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Utils\NetvarManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Aimbot\TriggerBot.cpp">
+      <Filter>Features\Aimbot\Legit</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Utils\vfunc.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\TichShift\violance.cpp">
+      <Filter>Features\TickShift</Filter>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Features\Backtrack\Backtrack.cpp">
+      <Filter>Features\Backtrack</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Alpheus\AntiLeak.h" />
+    <ClInclude Include="Tickbase.h" />
+    <ClInclude Include="voicerecording.h" />
+    <ClInclude Include="Alpheus\Menu\Config.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Legit\LegitAimbot.h">
+      <Filter>Features\Aimbot\Legit</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Aimbot\Autowall.h">
+      <Filter>Features\Autowall</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\AntiAim\AntiAim.h">
+      <Filter>Features\AntiAim\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\AntiAim\LegitAntiAim.h">
+      <Filter>Features\AntiAim\Legit</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Aimbot\LagComp.h">
+      <Filter>Features\LagComp</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\AntiAim\FakeLag.h">
+      <Filter>Features\Fakelag</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Aimbot\EnginePrediction.h">
+      <Filter>Features\Prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Visuals\ESP.h">
+      <Filter>Features\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Knife\skinchanger.h">
+      <Filter>Features\Skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Resolver\Resolver2.h">
+      <Filter>Features\Resolver</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Visuals\RemasteredEsp.h">
+      <Filter>Features\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Visuals\GlowEsp.h">
+      <Filter>Features\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Knife\glovechanger.h">
+      <Filter>Features\Skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\GlobalVars.h">
+      <Filter>Features\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Visuals\grenadetracer.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Features.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Menu\SpecList.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Visuals\Nightmode.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Walkbot.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Menu\Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Hooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Misc\Misc.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Misc\Logger.h">
+      <Filter>Features\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Logger\Logger_sec.h">
+      <Filter>Features\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Knife\Knife.h">
+      <Filter>Features\Skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\hitsounds.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Misc\hitsounds.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Aimbot\Aimbot.h">
+      <Filter>Features\Aimbot\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualMethod.h">
+      <Filter>VirtualMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProfileChanger\MemAlloc.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProfileChanger\Messages.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProfileChanger\valve_parser.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\base_gcmessages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\cstrike15_gcmessages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\econ_gcmessages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\engine_gcmessages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\fatdemo.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\gcsdk_gcmessages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\gcsystemmsgs.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\Messages.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\netmessages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\network_connection.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\Protobuffs.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\ProtobufReader.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\ProtoField.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\ProtoWriter.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\SteamClient.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\steamdatagram_messages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\SteamID.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\steammessages.pb.h">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\Protobuffs.h">
+      <Filter>Features\ProfileChanger\ProtoUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\ProtobufReader.h">
+      <Filter>Features\ProfileChanger\ProtoUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\ProtoWriter.h">
+      <Filter>Features\ProfileChanger\ProtoUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\pbwrap.h">
+      <Filter>Features\ProfileChanger\ProtoUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\MinHook.h">
+      <Filter>Hooks\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\buffer.h">
+      <Filter>Hooks\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\trampoline.h">
+      <Filter>Hooks\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\hde32.h">
+      <Filter>Hooks\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\hde64.h">
+      <Filter>Hooks\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\pstdint.h">
+      <Filter>Hooks\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\table32.h">
+      <Filter>Hooks\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\table64.h">
+      <Filter>Hooks\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\checksum_crc.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\bspflags.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CEntity.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CGlobalVarsBase.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CGlowObjectManager.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CHandle.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\Checksum_Md5.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CHudChat.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CInput.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\ClientClass.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CModelRender.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\Color.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Core\Core.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CPrediction.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\CTrace.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\Definitions.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\Drops+.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\Hitboxes.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Menu\Hotkeys.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IBaseClientDll.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\Hud.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientEntity.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientEntityList.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientNetworkable.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientMode.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientRenderable.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientState.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientThinkable.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IClientUnknown.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\ICvar.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IEngineTrace.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IGameConsole.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IGameEvent.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IMaterial.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IMDLCache.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\Interfaces.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\ISurface.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\ISurfaceData.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IVEngineClient.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IVModelInfo.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\IVRenderView.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\KeyValues.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Menu\KeyVisualizer.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Menu\lodepng\lodepng.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\Math.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\AntiAim\mem_alloc.h">
+      <Filter>Features\AntiAim</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Menu\models.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\NetvarManager.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\Recv.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\SDKinc.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\singleton.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\SPoint.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\SRect.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Aimbot\TriggerBot.h">
+      <Filter>Features\Aimbot\Legit</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\Vector.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\vector2d.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\vector3d.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\TichShift\violance.h">
+      <Filter>Features\TickShift</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\SDK\VMatrix.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Utils\xor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Alpheus\Features\Backtrack\Backtrack.h">
+      <Filter>Features\Backtrack</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{842d3bb7-04c5-443f-ab54-7c9a457da56e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{4ef8ee92-3c64-4e13-9623-7344d054b0b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Aimbot">
+      <UniqueIdentifier>{615be72e-fe2b-45c3-bba7-ce4be4bfb1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Aimbot\Rage">
+      <UniqueIdentifier>{d5e3e083-6a31-4cc3-a08b-dce4b829de27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Aimbot\Legit">
+      <UniqueIdentifier>{7d290cb5-816a-4793-a41f-d5bdfd654f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Autowall">
+      <UniqueIdentifier>{5354f134-5bfd-4c68-aa23-c3c64fc757ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\AntiAim">
+      <UniqueIdentifier>{4c4bf227-43f7-4a0e-aaad-407a2cc37901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\AntiAim\Rage">
+      <UniqueIdentifier>{ac46eda9-6a80-4c14-bc6c-9429b4ecca1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\AntiAim\Legit">
+      <UniqueIdentifier>{c0a160bd-3229-419f-8645-430b2ad960c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\LagComp">
+      <UniqueIdentifier>{09f621e2-d15d-4cb2-89d8-6acceca8e419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Fakelag">
+      <UniqueIdentifier>{430a655e-89aa-49fb-8ef1-440e258adeb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Prediction">
+      <UniqueIdentifier>{38c5f483-106c-4b4b-9872-b5221aae454d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Visuals">
+      <UniqueIdentifier>{25c9006a-0a0e-4023-af6c-6b9226536a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Resolver">
+      <UniqueIdentifier>{e94976e8-b4f3-4de4-ba8b-db4f1c50fa6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Globals">
+      <UniqueIdentifier>{78fb7020-7777-4c0d-9e87-e37a359b94ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Skinchanger">
+      <UniqueIdentifier>{4591f084-0297-49d0-a2fd-5e03d075512b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Misc">
+      <UniqueIdentifier>{97f4eb65-fd27-47b1-9635-f8eae1557893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{05661279-8871-498d-8931-8ced7e620b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{fe26c159-be46-4a14-8050-1046f8154519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Logger">
+      <UniqueIdentifier>{3775a156-b78c-48db-94be-7fa84d7036e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VirtualMethod">
+      <UniqueIdentifier>{839313aa-ef56-43c1-a5ad-30562c0a3584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\ProfileChanger">
+      <UniqueIdentifier>{7546b222-4106-43d5-8481-eecb5518e97a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\ProfileChanger\ProtoUtils">
+      <UniqueIdentifier>{544a3dee-85c4-4b05-843b-b9d57c328c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\ProfileChanger\protobuf">
+      <UniqueIdentifier>{26449663-4ded-4d53-9bd6-002f1a462ae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\MinHook">
+      <UniqueIdentifier>{d6fe8acb-858c-4390-b7bc-df6dd60390f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\MinHook\hde">
+      <UniqueIdentifier>{eafd9303-7691-4437-bbee-259b9aa1815c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{9cfcbc61-6bb4-4a22-a432-011f01818593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{30af75a7-11df-4e28-a3fd-fc05fa368cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{c34e40f5-b3d1-4139-931e-ba73ca150259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\TickShift">
+      <UniqueIdentifier>{f8e33cc9-6d91-47e2-95fa-2afe14bb6bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Backtrack">
+      <UniqueIdentifier>{f8fab54b-9ece-49fb-a932-0ef1694e619c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Alpheus\Features\ProfileChanger\protobuf\libprotobuf.lib">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </Library>
+    <Library Include="Alpheus\Features\ProfileChanger\protobuf\libprotoc.lib">
+      <Filter>Features\ProfileChanger\protobuf</Filter>
+    </Library>
+    <Library Include="Alpheus\SDK\MinHook\MinHook.x86.lib">
+      <Filter>Hooks\MinHook</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
