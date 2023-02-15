@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Antario\DLLMain.cpp" />
+    <ClCompile Include="Antario\Menu\lodepng\lodepng.cpp" />
+    <ClCompile Include="Antario\SDK\CEntity.cpp" />
+    <ClCompile Include="Antario\SDK\Checksum_Md5.cpp" />
+    <ClCompile Include="Antario\SDK\Drops+.cpp" />
+    <ClCompile Include="Antario\Utils\Interfaces.cpp" />
+    <ClCompile Include="Antario\Utils\Math.cpp" />
+    <ClCompile Include="Antario\Utils\NetvarManager.cpp" />
+    <ClCompile Include="Antario\Utils\vfunc.cpp" />
+    <ClCompile Include="Tickbase.cpp" />
+    <ClCompile Include="voicerecording.cpp" />
+    <ClCompile Include="Antario\Features\Aimbot\Aimbot.cpp">
+      <Filter>Features\Aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\AntiAim\AntiAim.cpp">
+      <Filter>Features\AntiAim</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Aimbot\Autowall.cpp">
+      <Filter>Features\AutoWall</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Visuals\ESP.cpp">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\AntiAim\FakeLag.cpp">
+      <Filter>Features\FakeLag</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Visuals\GlowEsp.cpp">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Knife\glovechanger.cpp">
+      <Filter>Features\Skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Visuals\grenadetracer.cpp">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Knife\skinchanger.cpp">
+      <Filter>Features\Skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Misc\Protobuffs.cpp">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Knife\Knife.cpp">
+      <Filter>Features\Skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\TichShift\violance.cpp">
+      <Filter>Features\TickBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Walkbot.cpp">
+      <Filter>Features\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Menu\SpecList.cpp">
+      <Filter>Features\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Visuals\Nightmode.cpp">
+      <Filter>Features\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Aimbot\TriggerBot.cpp">
+      <Filter>Features\LegitBot\TriggerBot</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Legit\LegitAimbot.cpp">
+      <Filter>Features\LegitBot</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\AntiAim\LegitAntiAim.cpp">
+      <Filter>Features\LegitBot</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Menu\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Resolver\Resolver2.cpp">
+      <Filter>Features\Resolver</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Visuals\RemasteredEsp.cpp">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Aimbot\LagComp.cpp">
+      <Filter>Features\LagComp</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Menu\Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Aimbot\EnginePrediction.cpp">
+      <Filter>Features\Prediction</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Utils\GlobalVars.cpp">
+      <Filter>Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Misc\Logger.cpp">
+      <Filter>Features\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Hooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Antario\Features\Logger\Logger_sec.cpp">
+      <Filter>Features\Logger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Antario\AntiLeak.h" />
+    <ClInclude Include="Antario\Features\AntiAim\mem_alloc.h" />
+    <ClInclude Include="Antario\Features\Features.h" />
+    <ClInclude Include="Antario\Features\Misc\hitsounds.h" />
+    <ClInclude Include="Antario\Features\Misc\IMemaAlloc.h" />
+    <ClInclude Include="Antario\Features\Misc\inventory_changer.h" />
+    <ClInclude Include="Antario\Menu\Hotkeys.h" />
+    <ClInclude Include="Antario\Menu\lodepng\lodepng.h" />
+    <ClInclude Include="Antario\Menu\models.h" />
+    <ClInclude Include="Antario\SDK\bspflags.h" />
+    <ClInclude Include="Antario\SDK\CGlowObjectManager.h" />
+    <ClInclude Include="Antario\SDK\CHandle.h" />
+    <ClInclude Include="Antario\SDK\CEntity.h" />
+    <ClInclude Include="Antario\SDK\checksum_crc.h" />
+    <ClInclude Include="Antario\SDK\Checksum_Md5.h" />
+    <ClInclude Include="Antario\SDK\CHudChat.h" />
+    <ClInclude Include="Antario\SDK\CInput.h" />
+    <ClInclude Include="Antario\SDK\ClientClass.h" />
+    <ClInclude Include="Antario\SDK\CModelRender.h" />
+    <ClInclude Include="Antario\SDK\CTrace.h" />
+    <ClInclude Include="Antario\SDK\Drops+.h" />
+    <ClInclude Include="Antario\SDK\Hitboxes.h" />
+    <ClInclude Include="Antario\SDK\Hud.h" />
+    <ClInclude Include="Antario\SDK\IClientState.h" />
+    <ClInclude Include="Antario\SDK\ICvar.h" />
+    <ClInclude Include="Antario\SDK\IEngineTrace.h" />
+    <ClInclude Include="Antario\SDK\IMaterial.h" />
+    <ClInclude Include="Antario\SDK\IMDLCache.h" />
+    <ClInclude Include="Antario\SDK\ISurface.h" />
+    <ClInclude Include="Antario\SDK\ISurfaceData.h" />
+    <ClInclude Include="Antario\SDK\IVModelInfo.h" />
+    <ClInclude Include="Antario\SDK\IVRenderView.h" />
+    <ClInclude Include="Antario\SDK\SDKinc.h" />
+    <ClInclude Include="Antario\SDK\singleton.h" />
+    <ClInclude Include="Antario\SDK\vector2d.h" />
+    <ClInclude Include="Antario\SDK\vector3d.h" />
+    <ClInclude Include="Antario\SDK_s\Definitions.h" />
+    <ClInclude Include="Antario\SDK_s\IGameEvent.h" />
+    <ClInclude Include="Antario\SDK_s\KeyValues.h" />
+    <ClInclude Include="Antario\SDK_s\PlayerInfo.h" />
+    <ClInclude Include="Antario\SDK_s\Vector.h" />
+    <ClInclude Include="Antario\SDK_s\VMatrix.h" />
+    <ClInclude Include="Antario\Utils\Color.h" />
+    <ClInclude Include="Antario\SDK\CPrediction.h" />
+    <ClInclude Include="Antario\SDK\Definitions.h" />
+    <ClInclude Include="Antario\SDK\IBaseClientDll.h" />
+    <ClInclude Include="Antario\SDK\IClientEntity.h" />
+    <ClInclude Include="Antario\SDK\IClientEntityList.h" />
+    <ClInclude Include="Antario\SDK\IClientMode.h" />
+    <ClInclude Include="Antario\SDK\IClientNetworkable.h" />
+    <ClInclude Include="Antario\SDK\IClientRenderable.h" />
+    <ClInclude Include="Antario\SDK\IClientThinkable.h" />
+    <ClInclude Include="Antario\SDK\IClientUnknown.h" />
+    <ClInclude Include="Antario\SDK\IGameEvent.h" />
+    <ClInclude Include="Antario\SDK\IVEngineClient.h" />
+    <ClInclude Include="Antario\SDK\KeyValues.h" />
+    <ClInclude Include="Antario\SDK\PlayerInfo.h" />
+    <ClInclude Include="Antario\Utils\hitsounds.h" />
+    <ClInclude Include="Antario\Utils\Interfaces.h" />
+    <ClInclude Include="Antario\SDK\Recv.h" />
+    <ClInclude Include="Antario\SDK\Vector.h" />
+    <ClInclude Include="Antario\SDK\VMatrix.h" />
+    <ClInclude Include="Antario\Utils\Math.h" />
+    <ClInclude Include="Antario\Utils\NetvarManager.h" />
+    <ClInclude Include="Antario\Utils\SPoint.h" />
+    <ClInclude Include="Antario\Utils\SRect.h" />
+    <ClInclude Include="Antario\Utils\Utils.h" />
+    <ClInclude Include="Antario\Utils_s\Interfaces.h" />
+    <ClInclude Include="Antario\Utils_s\SPoint.h" />
+    <ClInclude Include="Antario\Utils_s\SRect.h" />
+    <ClInclude Include="Antario\Utils_s\Utils.h" />
+    <ClInclude Include="voicerecording.h" />
+    <ClInclude Include="Antario\Features\Aimbot\Aimbot.h">
+      <Filter>Features\Aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\AntiAim\AntiAim.h">
+      <Filter>Features\AntiAim</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Aimbot\Autowall.h">
+      <Filter>Features\AutoWall</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Visuals\ESP.h">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\AntiAim\FakeLag.h">
+      <Filter>Features\FakeLag</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Visuals\GlowEsp.h">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Knife\glovechanger.h">
+      <Filter>Features\Skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Visuals\grenadetracer.h">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Knife\skinchanger.h">
+      <Filter>Features\Skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Misc\Protobuffs.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Misc\ProtobuffMessages.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Misc\profile_info_changer.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Misc\rankchanger.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Knife\Knife.h">
+      <Filter>Features\Skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Tickbase.h">
+      <Filter>Features\TickBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\TichShift\violance.h">
+      <Filter>Features\TickBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Walkbot.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Menu\SpecList.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Visuals\Nightmode.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Misc\Misc.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Aimbot\TriggerBot.h">
+      <Filter>Features\LegitBot\TriggerBot</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Legit\LegitAimbot.h">
+      <Filter>Features\LegitBot</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\AntiAim\LegitAntiAim.h">
+      <Filter>Features\LegitBot</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Menu\Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Resolver\Resolver2.h">
+      <Filter>Features\Resolver</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Visuals\RemasteredEsp.h">
+      <Filter>Features\Misc\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Aimbot\LagComp.h">
+      <Filter>Features\LagComp</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Menu\KeyVisualizer.h">
+      <Filter>Features\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Menu\Config.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Aimbot\EnginePrediction.h">
+      <Filter>Features\Prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Utils\GlobalVars.h">
+      <Filter>Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\SDK\CGlobalVarsBase.h">
+      <Filter>Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Misc\Logger.h">
+      <Filter>Features\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Misc\steam.h">
+      <Filter>Features\ProfileChanger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Hooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Features\Logger\Logger_sec.h">
+      <Filter>Features\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Core\Core.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Antario\Utils\xor.h">
+      <Filter>String Obfuscator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Features">
+      <UniqueIdentifier>{d5a5e85b-9ce6-4030-8571-43045fc798b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Aimbot">
+      <UniqueIdentifier>{cbaa3b09-2a9d-4a54-80ed-073a1697bce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\AntiAim">
+      <UniqueIdentifier>{809a70af-c750-4baa-9b0c-0425ace84031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\AutoWall">
+      <UniqueIdentifier>{d27c5acf-0509-44f3-98b0-15ded7162817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\FakeLag">
+      <UniqueIdentifier>{7dc58ba2-5f2f-4dd2-869f-cdfa75d68d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Skinchanger">
+      <UniqueIdentifier>{6da7a5e4-95b4-47c9-b3e2-763e4e619d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\ProfileChanger">
+      <UniqueIdentifier>{c3589143-13ef-45cb-aa25-debbaa07b40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\TickBase">
+      <UniqueIdentifier>{7c19d977-dad7-4b11-8106-c2e13d163af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Misc">
+      <UniqueIdentifier>{fb211fdc-3358-4c27-b759-93c1f56b16ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\LegitBot">
+      <UniqueIdentifier>{a09038b6-7672-466f-9352-db09bfdcd5d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\LegitBot\TriggerBot">
+      <UniqueIdentifier>{c888e0eb-f97e-44e3-b3bb-bed7ce1d5214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{be9de907-9418-43e0-867e-91f3657f13f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\LagComp">
+      <UniqueIdentifier>{208063cc-19c0-45b8-8718-719fb755a9ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Misc\Visuals">
+      <UniqueIdentifier>{e1b96e24-f7f5-46da-bd30-ed3893af4d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0716938d-4019-4016-ab9e-6b2efb7a5785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Prediction">
+      <UniqueIdentifier>{8d4f1e9e-a7e6-456e-b416-2f7ed381b835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Globals">
+      <UniqueIdentifier>{6604376d-9c37-4e81-b62b-b73a37a98508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Logger">
+      <UniqueIdentifier>{6413f484-b7e6-4112-ac05-cb80405dfafc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{fe3bbfa6-316d-4536-881e-ed32313bc54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{c7d3465a-f376-4a47-b479-d9f80696706e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Resolver">
+      <UniqueIdentifier>{2f250cc4-9238-45b1-a773-2f4744f3260f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String Obfuscator">
+      <UniqueIdentifier>{f730bbb4-17b0-41b0-89d1-9272a883cea3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
