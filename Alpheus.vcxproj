@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug2|Win32">
+      <Configuration>Debug2</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MainDebug|Win32">
+      <Configuration>MainDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1B8103F7-F793-47B0-9FBE-44EC66BC319D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Alpheus</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <ProjectName>Alpheus</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MainDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MainDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\Release</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86</ExecutablePath>
+    <IncludePath>S:\Egyebek\Sources\Alpheus\Alpheus\SDK\MinHook;S:\Egyebek\Sources\Alpheus\Alpheus\Features\ProfileChanger\protobuf\google;S:\Egyebek\Sources\Alpheus\Alpheus\Features\ProfileChanger\protobuf;S:\Egyebek\Sources\Alpheus\Alpheus\Features\ProfileChanger;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <TargetName>WinDriverDebug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86</ExecutablePath>
+    <IncludePath>S:\Egyebek\Sources\Alpheus\Alpheus\Features\ProfileChanger\protobuf;S:\Egyebek\Sources\Alpheus\Alpheus\Features\ProfileChanger\protobuf\google;S:\Egyebek\Sources\Alpheus\Alpheus\Features\ProfileChanger;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <TargetName>WinDriver</TargetName>
+    <OutDir>.\Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MainDebug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86</ExecutablePath>
+    <IncludePath>S:\Egyebek\MMar fileok\Alpheus\Alpheus\Features\ProfileChanger\protobuf;S:\Egyebek\MMar fileok\Alpheus\Alpheus\Features\ProfileChanger\protobuf\google;S:\Egyebek\MMar fileok\Alpheus\Alpheus\Features\ProfileChanger;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <TargetName>WinDriver</TargetName>
+    <OutDir>.\Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>.\dll\debug\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86</ExecutablePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <TargetName>funnycake</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;DEBUG;Alpheus_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <ConformanceMode>false</ConformanceMode>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MapExports>true</MapExports>
+      <AssemblyDebug>true</AssemblyDebug>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration />
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;NDEBUG;Alpheus_EXPORTS;_WINDOWS;_USRDLL;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>
+      </RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <SDLCheck>false</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PerUserRedirection>false</PerUserRedirection>
+      <MapExports>true</MapExports>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MainDebug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;Alpheus_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;_ITERATOR_DEBUG_LEVEL 2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>
+      </RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PerUserRedirection>false</PerUserRedirection>
+      <MapExports>true</MapExports>
+      <AssemblyDebug>true</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug2|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;Alpheus_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <StringPooling>
+      </StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>
+      </EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>
+      </RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PerUserRedirection>false</PerUserRedirection>
+      <MapExports>true</MapExports>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Alpheus\Features\Aimbot\EnginePrediction.cpp" />
+    <ClCompile Include="Alpheus\Features\Aimbot\Aimbot.cpp" />
+    <ClCompile Include="Alpheus\Features\Aimbot\Autowall.cpp" />
+    <ClCompile Include="Alpheus\Features\Aimbot\LagComp.cpp" />
+    <ClCompile Include="Alpheus\Features\Aimbot\TriggerBot.cpp" />
+    <ClCompile Include="Alpheus\Features\AntiAim\AntiAim.cpp" />
+    <ClCompile Include="Alpheus\Features\AntiAim\FakeLag.cpp" />
+    <ClCompile Include="Alpheus\Features\AntiAim\LegitAntiAim.cpp" />
+    <ClCompile Include="Alpheus\Features\Backtrack\Backtrack.cpp" />
+    <ClCompile Include="Alpheus\Features\Knife\glovechanger.cpp" />
+    <ClCompile Include="Alpheus\Features\Knife\Knife.cpp" />
+    <ClCompile Include="Alpheus\Features\Knife\skinchanger.cpp" />
+    <ClCompile Include="Alpheus\Features\Legit\LegitAimbot.cpp" />
+    <ClCompile Include="Alpheus\Features\Logger\Logger_sec.cpp" />
+    <ClCompile Include="Alpheus\Features\Misc\Logger.cpp" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\ProfileChanger\valve_parser.cpp" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\base_gcmessages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\cstrike15_gcmessages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\econ_gcmessages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\engine_gcmessages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\fatdemo.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\gcsdk_gcmessages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\gcsystemmsgs.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\netmessages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\network_connection.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\Protobuffs.cpp" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\steamdatagram_messages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\protobuf\steammessages.pb.cc" />
+    <ClCompile Include="Alpheus\Features\ProfileChanger\ProtoUtils\Protobuffs.cpp" />
+    <ClCompile Include="Alpheus\Features\TichShift\violance.cpp" />
+    <ClCompile Include="Alpheus\Features\Visuals\GlowEsp.cpp" />
+    <ClCompile Include="Alpheus\Features\Visuals\grenadetracer.cpp" />
+    <ClCompile Include="Alpheus\Features\Visuals\Nightmode.cpp" />
+    <ClCompile Include="Alpheus\Features\Visuals\RemasteredEsp.cpp" />
+    <ClCompile Include="Alpheus\Hooks.cpp" />
+    <ClCompile Include="Alpheus\DLLMain.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="Alpheus\Menu\lodepng\lodepng.cpp" />
+    <ClCompile Include="Alpheus\Menu\Menu.cpp" />
+    <ClCompile Include="Alpheus\Menu\Config.cpp" />
+    <ClCompile Include="Alpheus\Menu\SpecList.cpp" />
+    <ClCompile Include="Alpheus\SDK\CEntity.cpp" />
+    <ClCompile Include="Alpheus\SDK\checksum_crc.cpp" />
+    <ClCompile Include="Alpheus\SDK\Checksum_Md5.cpp" />
+    <ClCompile Include="Alpheus\SDK\Drops+.cpp" />
+    <ClCompile Include="Alpheus\SDK\MinHook\buffer.c" />
+    <ClCompile Include="Alpheus\SDK\MinHook\hde\hde32.c" />
+    <ClCompile Include="Alpheus\SDK\MinHook\hde\hde64.c" />
+    <ClCompile Include="Alpheus\SDK\MinHook\hook.c" />
+    <ClCompile Include="Alpheus\SDK\MinHook\trampoline.c" />
+    <ClCompile Include="Alpheus\Utils\GlobalVars.cpp" />
+    <ClCompile Include="Alpheus\Utils\Interfaces.cpp" />
+    <ClCompile Include="Alpheus\Utils\Math.cpp" />
+    <ClCompile Include="Alpheus\Utils\NetvarManager.cpp" />
+    <ClCompile Include="Alpheus\Features\Visuals\ESP.cpp" />
+    <ClCompile Include="Alpheus\Features\Resolver\Resolver2.cpp" />
+    <ClCompile Include="Alpheus\Utils\vfunc.cpp" />
+    <ClCompile Include="Tickbase.cpp" />
+    <ClCompile Include="voicerecording.cpp" />
+    <ClCompile Include="Walkbot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Alpheus\AntiLeak.h" />
+    <ClInclude Include="Alpheus\Core\Core.h" />
+    <ClInclude Include="Alpheus\Features\Aimbot\Aimbot.h" />
+    <ClInclude Include="Alpheus\Features\Aimbot\Autowall.h" />
+    <ClInclude Include="Alpheus\Features\Aimbot\EnginePrediction.h" />
+    <ClInclude Include="Alpheus\Features\Aimbot\LagComp.h" />
+    <ClInclude Include="Alpheus\Features\Aimbot\TriggerBot.h" />
+    <ClInclude Include="Alpheus\Features\AntiAim\AntiAim.h" />
+    <ClInclude Include="Alpheus\Features\AntiAim\FakeLag.h" />
+    <ClInclude Include="Alpheus\Features\AntiAim\LegitAntiAim.h" />
+    <ClInclude Include="Alpheus\Features\AntiAim\mem_alloc.h" />
+    <ClInclude Include="Alpheus\Features\Backtrack\Backtrack.h" />
+    <ClInclude Include="Alpheus\Features\Features.h" />
+    <ClInclude Include="Alpheus\Features\Knife\glovechanger.h" />
+    <ClInclude Include="Alpheus\Features\Knife\Knife.h" />
+    <ClInclude Include="Alpheus\Features\Knife\skinchanger.h" />
+    <ClInclude Include="Alpheus\Features\Legit\LegitAimbot.h" />
+    <ClInclude Include="Alpheus\Features\Logger\Logger_sec.h" />
+    <ClInclude Include="Alpheus\Features\Misc\hitsounds.h" />
+    <ClInclude Include="Alpheus\Features\Misc\Logger.h" />
+    <ClInclude Include="Alpheus\Features\Misc\Misc.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProfileChanger\MemAlloc.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProfileChanger\Messages.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProfileChanger\valve_parser.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\base_gcmessages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\cstrike15_gcmessages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\econ_gcmessages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\engine_gcmessages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\fatdemo.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\gcsdk_gcmessages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\gcsystemmsgs.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\Messages.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\netmessages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\network_connection.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\Protobuffs.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\ProtobufReader.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\ProtoField.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\ProtoWriter.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\SteamClient.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\steamdatagram_messages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\SteamID.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\protobuf\steammessages.pb.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\pbwrap.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\Protobuffs.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\ProtobufReader.h" />
+    <ClInclude Include="Alpheus\Features\ProfileChanger\ProtoUtils\ProtoWriter.h" />
+    <ClInclude Include="Alpheus\Features\TichShift\violance.h" />
+    <ClInclude Include="Alpheus\Features\Visuals\GlowEsp.h" />
+    <ClInclude Include="Alpheus\Features\Visuals\grenadetracer.h" />
+    <ClInclude Include="Alpheus\Features\Visuals\RemasteredEsp.h" />
+    <ClInclude Include="Alpheus\Hooks.h" />
+    <ClInclude Include="Alpheus\Menu\Hotkeys.h" />
+    <ClInclude Include="Alpheus\Menu\KeyVisualizer.h" />
+    <ClInclude Include="Alpheus\Menu\lodepng\lodepng.h" />
+    <ClInclude Include="Alpheus\Menu\Menu.h" />
+    <ClInclude Include="Alpheus\Menu\Config.h" />
+    <ClInclude Include="Alpheus\Menu\models.h" />
+    <ClInclude Include="Alpheus\Menu\SpecList.h" />
+    <ClInclude Include="Alpheus\SDK\bspflags.h" />
+    <ClInclude Include="Alpheus\SDK\CGlobalVarsBase.h" />
+    <ClInclude Include="Alpheus\SDK\CGlowObjectManager.h" />
+    <ClInclude Include="Alpheus\SDK\CHandle.h" />
+    <ClInclude Include="Alpheus\SDK\CEntity.h" />
+    <ClInclude Include="Alpheus\SDK\checksum_crc.h" />
+    <ClInclude Include="Alpheus\SDK\Checksum_Md5.h" />
+    <ClInclude Include="Alpheus\SDK\CHudChat.h" />
+    <ClInclude Include="Alpheus\SDK\CInput.h" />
+    <ClInclude Include="Alpheus\SDK\ClientClass.h" />
+    <ClInclude Include="Alpheus\SDK\CModelRender.h" />
+    <ClInclude Include="Alpheus\SDK\CTrace.h" />
+    <ClInclude Include="Alpheus\SDK\Drops+.h" />
+    <ClInclude Include="Alpheus\SDK\Hitboxes.h" />
+    <ClInclude Include="Alpheus\SDK\Hud.h" />
+    <ClInclude Include="Alpheus\SDK\IClientState.h" />
+    <ClInclude Include="Alpheus\SDK\ICvar.h" />
+    <ClInclude Include="Alpheus\SDK\IEngineTrace.h" />
+    <ClInclude Include="Alpheus\SDK\IGameConsole.h" />
+    <ClInclude Include="Alpheus\SDK\IMaterial.h" />
+    <ClInclude Include="Alpheus\SDK\IMDLCache.h" />
+    <ClInclude Include="Alpheus\SDK\ISurface.h" />
+    <ClInclude Include="Alpheus\SDK\ISurfaceData.h" />
+    <ClInclude Include="Alpheus\SDK\IVModelInfo.h" />
+    <ClInclude Include="Alpheus\SDK\IVRenderView.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\buffer.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\hde32.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\hde64.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\pstdint.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\table32.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\hde\table64.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\MinHook.h" />
+    <ClInclude Include="Alpheus\SDK\MinHook\trampoline.h" />
+    <ClInclude Include="Alpheus\SDK\SDKinc.h" />
+    <ClInclude Include="Alpheus\SDK\singleton.h" />
+    <ClInclude Include="Alpheus\SDK\vector2d.h" />
+    <ClInclude Include="Alpheus\SDK\vector3d.h" />
+    <ClInclude Include="Alpheus\Utils\Color.h" />
+    <ClInclude Include="Alpheus\SDK\CPrediction.h" />
+    <ClInclude Include="Alpheus\SDK\Definitions.h" />
+    <ClInclude Include="Alpheus\SDK\IBaseClientDll.h" />
+    <ClInclude Include="Alpheus\SDK\IClientEntity.h" />
+    <ClInclude Include="Alpheus\SDK\IClientEntityList.h" />
+    <ClInclude Include="Alpheus\SDK\IClientMode.h" />
+    <ClInclude Include="Alpheus\SDK\IClientNetworkable.h" />
+    <ClInclude Include="Alpheus\SDK\IClientRenderable.h" />
+    <ClInclude Include="Alpheus\SDK\IClientThinkable.h" />
+    <ClInclude Include="Alpheus\SDK\IClientUnknown.h" />
+    <ClInclude Include="Alpheus\SDK\IGameEvent.h" />
+    <ClInclude Include="Alpheus\SDK\IVEngineClient.h" />
+    <ClInclude Include="Alpheus\SDK\KeyValues.h" />
+    <ClInclude Include="Alpheus\Utils\GlobalVars.h" />
+    <ClInclude Include="Alpheus\Utils\hitsounds.h" />
+    <ClInclude Include="Alpheus\Utils\Interfaces.h" />
+    <ClInclude Include="Alpheus\SDK\Recv.h" />
+    <ClInclude Include="Alpheus\SDK\Vector.h" />
+    <ClInclude Include="Alpheus\SDK\VMatrix.h" />
+    <ClInclude Include="Alpheus\Utils\Math.h" />
+    <ClInclude Include="Alpheus\Utils\NetvarManager.h" />
+    <ClInclude Include="Alpheus\Utils\SPoint.h" />
+    <ClInclude Include="Alpheus\Utils\SRect.h" />
+    <ClInclude Include="Alpheus\Utils\Utils.h" />
+    <ClInclude Include="Alpheus\Features\Visuals\ESP.h" />
+    <ClInclude Include="Alpheus\Utils\xor.h" />
+    <ClInclude Include="Alpheus\Features\Visuals\Nightmode.h" />
+    <ClInclude Include="Alpheus\Features\Resolver\Resolver2.h" />
+    <ClInclude Include="Tickbase.h" />
+    <ClInclude Include="VirtualMethod.h" />
+    <ClInclude Include="voicerecording.h" />
+    <ClInclude Include="Walkbot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Alpheus\Features\ProfileChanger\protobuf\libprotobuf.lib" />
+    <Library Include="Alpheus\Features\ProfileChanger\protobuf\libprotoc.lib" />
+    <Library Include="Alpheus\SDK\MinHook\MinHook.x86.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
